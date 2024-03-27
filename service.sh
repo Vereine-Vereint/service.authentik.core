@@ -1,5 +1,5 @@
 #!/bin/bash
-SERVICE_NAME="TEMPLATE-PLEASE-CHANGE"
+SERVICE_NAME="authentik"
 SERVICE_VERSION="v0.1"
 
 set -e
