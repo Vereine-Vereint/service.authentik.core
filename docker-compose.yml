@@ -46,6 +46,7 @@ services:
       AUTHENTIK_POSTGRESQL__NAME: authentik
       AUTHENTIK_POSTGRESQL__PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # for ldap outpost creation
       - ./volumes/media:/media
       - ./volumes/custom-templates:/templates
     env_file:
