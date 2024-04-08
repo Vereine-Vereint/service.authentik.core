@@ -15,11 +15,10 @@ source ./borg/borg.sh
 
 # COMMANDS
 
-# This is an example command that prints a message from the first argument
-# commands+=([example]="<msg>:Example command that prints <msg>")
-# cmd_example() {
-#   echo "Example: $1"
-# }
+commands+=([ldap-network]=":Create a network for the LDAP server")
+cmd_ldap-network() {
+  docker network create ldap
+}
 
 # ATTACHMENTS
 
